@@ -71,11 +71,9 @@ function imc(pes:string, altura:string) : string {
  */
 function convertidor(valor:string, uni1:string, uni2:string) : string {
 
-	let valorNum : number = parseFloat(valor);
+	const escala = ["mm", "cm", "dm", "m", "Dm", "Hm", "Km"];
+	let esc = escala.indexOf(uni1) - escala.indexOf(uni2);
+	let r = parseFloat(valor) * (10 ** esc);
 
-	let unitatsLongitud : string[] = ["mm", "cm", "dm", "m", "Dm", "Hm", "Km"];
-	let unitatsaconvertir : number[] = [0.001, 0.01, 0.1, 1, 10, 100, 1000];
-	
-
-	return "";
+	return r.toPrecision(4);
 }
