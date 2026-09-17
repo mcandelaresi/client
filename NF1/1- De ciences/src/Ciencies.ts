@@ -57,6 +57,7 @@ function imc(pes:string, altura:string) : string {
 
 
 
+
 /**
  * Convertir unitats de longitud.
  * 
@@ -77,3 +78,4 @@ function convertidor(valor:string, uni1:string, uni2:string) : string {
 
 	return r.toPrecision(4);
 }
+

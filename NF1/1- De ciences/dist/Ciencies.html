@@ -10,23 +10,8 @@
 			div{vertical-align:middle;display:inline-block;height:2em;margin-top:4px;border:1px solid black;background-color:#e0e0e0;overflow-x:auto;}
 		</style>
 
-		<script defer src="Ciencies.js"></script>
+		<script type="module" src="Ciencies.js"></script>
 		
-		<script>
-			function _imc() {
-				let r = imc(document.getElementById('pes').value, document.getElementById('altura').value);
-				if (r != undefined) {
-					let v = r.split("-");
-					document.getElementById("imc").innerHTML = v[0];
-					document.getElementById("categoria").innerHTML = v[1];
-				}
-			}
-			
-			function _convertidor() {
-				let r = convertidor(document.getElementById('m1').value, document.getElementById('cm1').value, document.getElementById('cm2').value);
-				if (r != undefined) document.getElementById("m2").innerHTML = r;
-			}
-		</script>
 	</head>
 
 	<body>
