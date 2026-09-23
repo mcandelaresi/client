@@ -16,17 +16,19 @@ function mostrarParaules(paraules) {
     }
 }
 let resultat = CrearArrayParaules(1000);
-mostrarParaules(resultat);
 function ParaulaRepetida(paraules) {
     for (let i = paraules.length - 1; i >= 0; i--) {
         if (paraules.indexOf(paraules[i]) !== i) {
-            console.log(`La paraula "${paraules[i]}" està repetida.`);
+            console.log(`La paraula "${paraules[i]}" està repetida i està a la posició ${i}`);
             paraules.splice(i, 1);
-        }
-        else {
-            console.log(`La paraula "${paraules[i]}" no està repetida.`);
+            return true;
         }
     }
+    return false;
 }
-ParaulaRepetida(resultat);
+let inici = performance.now();
+while (ParaulaRepetida(resultat)) {
+}
+let final = performance.now();
+console.log(`Temps: ${final - inici} ms`);
 //# sourceMappingURL=main.js.map
