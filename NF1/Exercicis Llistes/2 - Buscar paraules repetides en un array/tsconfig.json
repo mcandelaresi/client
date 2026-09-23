@@ -1,9 +1,8 @@
-
 {
     "compilerOptions": {
-        "module": "node16",
-        "target": "es2020",
-        "moduleResolution": "node16",
+        "module": "nodenext",
+        "target": "esnext",
+        "moduleResolution": "nodenext",
         "rootDir": "./src",
         "sourceMap": true,
         "inlineSources": true,
@@ -13,9 +12,5 @@
         "allowJs": false,
         "removeComments": true,
         "outDir": "./dist"
-    },
-    "include": [
-        "src/**/*"
-    ]
+    }
 }
-

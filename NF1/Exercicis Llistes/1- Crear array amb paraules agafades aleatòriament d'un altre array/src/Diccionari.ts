@@ -8,7 +8,7 @@ export const _freq = [["A", 109142],["B", 14202],["C", 42384],["D", 28638],
 			["U", 24554],["V", 6973],["W", 44],["X", 1300],
 			["Y", 1366],["Z", 6190],["Ñ", 2037]];
 
-export const diccionari = [
+export const diccionari: string[] = [
 'A',
 'AARONICO',
 'AARONITA',
