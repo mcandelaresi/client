@@ -19,6 +19,7 @@ function CrearArrayParaules(n: number): string[] {
 // Array creat de 1000 paraules aleatòries
 let resultat = CrearArrayParaules(1000);
 
+let inici = performance.now();
 
 function triarParaules(n: number): string[] {
     let paraulesTriades: string[] = [];
@@ -30,7 +31,6 @@ function triarParaules(n: number): string[] {
 
 let triades = triarParaules(1000);
 
-let inici = performance.now();
 
 // Mètode que busca una paraula en un array sense ordenar i mostra la paraula i posició si l'ha trobat.
 function buscarParaula(paraules: string[], paraula: string): void {

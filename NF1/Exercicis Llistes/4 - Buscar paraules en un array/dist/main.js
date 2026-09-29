@@ -7,6 +7,7 @@ function CrearArrayParaules(n) {
     return paraules;
 }
 let resultat = CrearArrayParaules(1000);
+let inici = performance.now();
 function triarParaules(n) {
     let paraulesTriades = [];
     for (let i = 0; i < n; i++) {
@@ -15,7 +16,6 @@ function triarParaules(n) {
     return paraulesTriades;
 }
 let triades = triarParaules(1000);
-let inici = performance.now();
 function buscarParaula(paraules, paraula) {
     for (let i = 0; i < paraules.length; i++) {
         if (paraules[i] === paraula) {
