@@ -5,6 +5,7 @@ function crearArrayParaules(n: number): string[] {
     let paraules: string[] = [];
     for (let i = 0; i < n ; i++) {
         let posicioAleatoria = Math.floor(Math.random() * diccionari.length);
+        paraules.push(diccionari[posicioAleatoria]);
     }
     return paraules;
 }
@@ -51,3 +52,10 @@ let inici = performance.now();
 
 // Ordenar Array
 resultat.sort();
+
+//Busquem les paraules repetides amb la cerca binaria
+paraulaRepetida(resultat);
+
+// Acabem de comptar el temps
+let final = performance.now();
+console.log(`Temps d'execució: ${final - inici} ms`);
