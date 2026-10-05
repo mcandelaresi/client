@@ -13,7 +13,6 @@ function crearArrayNumerosAleatoris(n: number, min: number, max: number): number
 let resultat = crearArrayNumerosAleatoris(10, 0, 1000000);
 console.log("Array de 10 números aleatoris entre 0 i 1000000:\n" + resultat.join(", "));
 
-
 let parells = resultat.filter((numero) => numero % 2 === 0);
 console.log("Array de números parells:\n" + parells.join(", "));
 
