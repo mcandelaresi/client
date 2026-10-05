@@ -178,4 +178,3 @@ function BuscarPerPatro(
     return resultats;
 }
 
-// Exemple: // S?c de* // // ? = una lletra // * = qualsevol quantitat de lletres // // Ha de trobar: // "Suc de taronja" // "Sac de patates" let resultatPatro = BuscarPerPatro(articles, "descripcio", "S?c de*"); console.log("ARTICLES QUE COINCIDEIXEN AMB 'S?c de*':"); MostrarArticles(resultatPatro);
