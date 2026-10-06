@@ -139,7 +139,7 @@ function MostrarRecomanacions(dni) {
     });
 }
 MostrarRecomanacions("12345678A");
-MostrarRecomanacions("23456789B");
-MostrarRecomanacions("34567890C");
+MostrarRecomanacions("87654321B");
+MostrarRecomanacions("11223344C");
 export {};
 //# sourceMappingURL=main.js.map
