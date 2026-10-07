@@ -1,3 +1,20 @@
+// Agafem els elements de l'HTML
+
+let inputSegons = document.getElementById("segons") as HTMLInputElement;
+let botoExecutar = document.getElementById("executar") as HTMLButtonElement;
+let resultat = document.getElementById("resultat") as HTMLParagraphElement;
+
+
+// Funció que s'executarà amb retard
+
+function MostrarMissatge(): void {
+
+    resultat.textContent = "La funció s'ha executat!";
+}
+
+
+// Funció que executa una altra funció després d'un retard
+
 function ExecutarAmbRetard(
     funcio: () => void,
     segons: number
@@ -7,10 +24,22 @@ function ExecutarAmbRetard(
 }
 
 
-function MostrarMissatge(): void {
+// Quan premem el botó
 
-    console.log("Han passat 3 segons");
-}
+botoExecutar.addEventListener("click", function(): void {
 
+    let segons = Number(inputSegons.value);
 
-ExecutarAmbRetard(MostrarMissatge, 3);
+    if (isNaN(segons) || segons < 0) {
+
+        resultat.textContent = "Introdueix un nombre de segons vàlid.";
+
+    } else {
+
+        resultat.textContent =
+            "La funció s'executarà d'aquí " + segons + " segons.";
+
+        ExecutarAmbRetard(MostrarMissatge, segons);
+    }
+});
+
