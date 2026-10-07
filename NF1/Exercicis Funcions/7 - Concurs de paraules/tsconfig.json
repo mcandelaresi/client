@@ -1,0 +1,21 @@
+
+{
+    "compilerOptions": {
+        "module": "node16",
+        "target": "es2020",
+        "moduleResolution": "node16",
+        "rootDir": "./src",
+        "sourceMap": true,
+        "inlineSources": true,
+        "noEmitOnError": true,
+        "noImplicitAny": true,
+        "strict": true,
+        "allowJs": false,
+        "removeComments": true,
+        "outDir": "./dist"
+    },
+    "include": [
+        "src/**/*"
+    ]
+}
+
